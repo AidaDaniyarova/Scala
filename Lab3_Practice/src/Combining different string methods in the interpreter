@@ -1,0 +1,67 @@
+Exercise #6: Combining different string methods in the interpreter
+
+scala> var x: String = "Mary Had a Little Lamb"
+ x.substring(3).substring(3).substring(3)
+ x.substring(3).substring(0,1)
+ x.substring(0,10).substring(3)
+ x.substring(0,10).substring(3).toUpperCase
+ x.substring(0,10).substring(3).reverse
+ x.charAt(2-2)
+ x.charAt(1*2*3)
+ x.charAt(10 % 2)
+ x.charAt(x.length - 1)
+ x.charAt(x.indexOf("M")+2)
+ x.charAt(x.indexOf("b")-1)
+ x.charAt(0) + 1
+ (x.charAt(0) + 1).toChar
+ (x.charAt(0) - 1).toChar
+ (x.charAt(0) + 5).toChar
+ x.indexOf(x.charAt(0))
+ x.indexOf(x.charAt(1))
+ x.indexOf(x.charAt(6))
+ x.indexOf(x.substring(0,1))
+ x.indexOf("Had")
+ x.indexOf(x.substring(0,10))
+var x: String = Mary Had a Little Lamb
+
+scala> val res70: String = a Little Lamb
+
+scala> val res71: String = y
+
+scala> val res72: String = y Had a
+
+scala> val res73: String = Y HAD A
+
+scala> val res74: String = a daH y
+
+scala> val res75: Char = M
+
+scala> val res76: Char = a
+
+scala> val res77: Char = M
+
+scala> val res78: Char = b
+
+scala> val res79: Char = r
+
+scala> val res80: Char = m
+
+scala> val res81: Int = 78
+
+scala> val res82: Char = N
+
+scala> val res83: Char = L
+
+scala> val res84: Char = R
+
+scala> val res85: Int = 0
+
+scala> val res86: Int = 1
+
+scala> val res87: Int = 1
+
+scala> val res88: Int = 0
+
+scala> val res89: Int = 5
+
+scala> val res90: Int = 0

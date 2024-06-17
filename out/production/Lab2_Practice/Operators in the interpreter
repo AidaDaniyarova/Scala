@@ -1,0 +1,80 @@
+Exercise #6: Operators in the interpreter
+
+scala> 5 + 3
+ -3 + 5
+ 6 - -3 * 2 + 0.5
+ (6 - -3) * (2 + 0.5)
+ 10 / 3
+ 10 / 3.0
+ 2 / 0
+ 1592482843 * 2
+ 6.6 / 3
+ 5 * 3
+ 5 % 3
+ 6 % 3
+ "abcd" + 5
+ "abcd" + true
+ 5 + true
+ 5 + 4 * 3
+ (5 + 4) * 3
+ "number " + 5 + 6
+ "number " + (5 + 6)
+ 5 + 6 + " number"
+ "number " + 5 * 6
+val res0: Int = 8
+
+scala> val res1: Int = 2
+
+scala> val res2: Double = 12.5
+
+scala> val res3: Double = 22.5
+
+scala> val res4: Int = 3
+
+scala> val res5: Double = 3.3333333333333335
+
+scala> java.lang.ArithmeticException: / by zero
+  ... 32 elided
+
+scala> val res7: Int = -1110001610
+
+scala> val res8: Double = 2.1999999999999997
+
+scala> val res9: Int = 15
+
+scala> val res10: Int = 2
+
+scala> val res11: Int = 0
+
+scala> val res12: String = abcd5
+
+scala> val res13: String = abcdtrue
+
+scala> -- [E134] Type Error: ----------------------------------------------------------
+1 |5 + true
+  |^^^
+  |None of the overloaded alternatives of method + in class Int with types
+  | (x: Double): Double
+  | (x: Float): Float
+  | (x: Long): Long
+  | (x: Int): Int
+  | (x: Char): Int
+  | (x: Short): Int
+  | (x: Byte): Int
+  | (x: String): String
+  |match arguments ((true : Boolean))
+1 error found
+
+scala> val res14: Int = 17
+
+scala> val res15: Int = 27
+
+scala> val res16: String = number 56
+
+scala> val res17: String = number 11
+
+scala> there was 1 deprecation warning; re-run with -deprecation for details
+1 warning found
+val res18: String = 11 number
+
+scala> val res19: String = number 30

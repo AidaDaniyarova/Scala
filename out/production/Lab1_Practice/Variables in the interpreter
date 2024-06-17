@@ -1,0 +1,70 @@
+Exercise #12: Operators in the interpreter
+
+scala> var x1: Int = 5
+ var x2: Int = 5.0
+ var x3: Double = 5
+ x3 = x3 * 2
+ var x4: Boolean = true
+ var x5: Double = 3 / 4
+ var x6: Double = 3.0 / 4
+ var x7: Double = x6 + 1.2
+ x7 = x7 + 1.1
+ var x8: Int = x1 + x2
+ var x9: Long = 2147483647+1
+ var x10: Long = 2147483648+1
+ var x11: Int = _
+ var x12: Int = 2147483648
+ var x13: Long = 2147483648
+ var x14: Long = 2147483648L
+var x1: Int = 5
+
+scala> -- [E007] Type Mismatch Error: -------------------------------------------------
+1 |var x2: Int = 5.0
+  |              ^^^
+  |              Found:    (5.0d : Double)
+  |              Required: Int
+  |
+  | longer explanation available when compiling with `-explain`
+1 error found
+
+scala> var x3: Double = 5.0
+
+scala> x3: Double = 10.0
+
+scala> var x4: Boolean = true
+
+scala> var x5: Double = 0.0
+
+scala> var x6: Double = 0.75
+
+scala> var x7: Double = 1.95
+
+scala> x7: Double = 3.05
+
+scala> -- [E006] Not Found Error: -----------------------------------------------------
+1 |var x8: Int = x1 + x2
+  |                   ^^
+  |                   Not found: x2
+  |
+  | longer explanation available when compiling with `-explain`
+1 error found
+
+scala> var x9: Long = -2147483648
+
+scala> -- Error: ----------------------------------------------------------------------
+1 |var x10: Long = 2147483648+1
+  |                ^^^^^^^^^^
+  |                number too large
+1 error found
+
+scala> var x11: Int = 0
+
+scala> -- Error: ----------------------------------------------------------------------
+1 |var x12: Int = 2147483648
+  |               ^^^^^^^^^^
+  |               number too large
+1 error found
+
+scala> var x13: Long = 2147483648
+
+scala> var x14: Long = 2147483648

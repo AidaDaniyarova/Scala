@@ -1,0 +1,65 @@
+Exercise #10: Using the interpreter
+
+scala> 5
+ -5
+ 5.0
+ "5"
+ 2147483647
+ 2147483648
+ 2147483647L
+ 2147483648L
+ 5E3
+ true
+ True
+ "True"
+ "true"
+ a
+ 'a'
+ "a"
+val res0: Int = 5
+
+scala> val res1: Int = -5
+
+scala> val res2: Double = 5.0
+
+scala> val res3: String = 5
+
+scala> val res4: Int = 2147483647
+
+scala> -- Error: ----------------------------------------------------------------------
+1 |2147483648
+  |^^^^^^^^^^
+  |number too large
+1 error found
+
+scala> val res5: Long = 2147483647
+
+scala> val res6: Long = 2147483648
+
+scala> val res7: Double = 5000.0
+
+scala> val res8: Boolean = true
+
+scala> -- [E006] Not Found Error: -----------------------------------------------------
+1 |True
+  |^^^^
+  |Not found: True
+  |
+  | longer explanation available when compiling with `-explain`
+1 error found
+
+scala> val res9: String = True
+
+scala> val res10: String = true
+
+scala> -- [E006] Not Found Error: -----------------------------------------------------
+1 |a
+  |^
+  |Not found: a
+  |
+  | longer explanation available when compiling with `-explain`
+1 error found
+
+scala> val res11: Char = a
+
+scala> val res12: String = a

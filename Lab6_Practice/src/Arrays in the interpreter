@@ -1,0 +1,120 @@
+Exercise #3: Arrays in the interpreter
+
+scala> new Array[Int](10)
+ new Array[Char](5)
+ new Array[Double](8)
+ new Array[Boolean](6)
+ new Array[String](5)
+ new Array[List[Int]](5)
+ Array[Int](5)
+ Array[Int](20)
+ Array[Boolean](5)
+ Array[Double](5)
+ Array(5)
+ Array(10, 20, 30)
+ Array(1.1, 2.2, 3.3, 4.4)
+ Array('a','b','c')
+ Array("pear", "banana", "kiwi")
+ Array(List(1,2,3), List(4,5,6), List(7,8,9))
+ Array.range(1, 20)
+ Array.range(0, 10, 2)
+ Array.fill(3)("foo")
+ List(1, 2, 3).toArray
+ "Hello World".toArray
+ Array.tabulate(11)(n => n * n)
+ var x = Array(10, 20, 30, 40, 50)
+ x(0)
+ x(10)
+ x(4)
+ x(3) = 100
+ x
+ x.length
+ var y = Array(60, 70)
+ Array.concat(x, y)
+ var z = new Array[Int](10)
+ Array.concat(x, z)
+ new Array(100, 200)
+ Array(100, 200)
+val res0: Array[Int] = Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+
+scala> val res1: Array[Char] = Array( ,  ,  ,  ,  )
+
+scala> val res2: Array[Double] = Array(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0)
+
+scala> val res3: Array[Boolean] = Array(false, false, false, false, false, false)
+
+scala> val res4: Array[String] = Array(null, null, null, null, null)
+
+scala> val res5: Array[List[Int]] = Array(null, null, null, null, null)
+
+scala> val res6: Array[Int] = Array(5)
+
+scala> val res7: Array[Int] = Array(20)
+
+scala> -- [E007] Type Mismatch Error: -------------------------------------------------
+1 |Array[Boolean](5)
+  |               ^
+  |               Found:    (5 : Int)
+  |               Required: Boolean
+  |
+  | longer explanation available when compiling with `-explain`
+1 error found
+
+scala> val res8: Array[Double] = Array(5.0)
+
+scala> val res9: Array[Int] = Array(5)
+
+scala> val res10: Array[Int] = Array(10, 20, 30)
+
+scala> val res11: Array[Double] = Array(1.1, 2.2, 3.3, 4.4)
+
+scala> val res12: Array[Char] = Array(a, b, c)
+
+scala> val res13: Array[String] = Array(pear, banana, kiwi)
+
+scala> val res14: Array[List[Int]] = Array(List(1, 2, 3), List(4, 5, 6), List(7, 8, 9))
+
+scala> val res15: Array[Int] = Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19)
+
+scala> val res16: Array[Int] = Array(0, 2, 4, 6, 8)
+
+scala> val res17: Array[String] = Array(foo, foo, foo)
+
+scala> val res18: Array[Int] = Array(1, 2, 3)
+
+scala> val res19: Array[Char] = Array(H, e, l, l, o,  , W, o, r, l, d)
+
+scala> val res20: Array[Int] = Array(0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
+
+scala> var x: Array[Int] = Array(10, 20, 30, 40, 50)
+
+scala> val res21: Int = 10
+
+scala> java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 5
+  ... 32 elided
+
+scala> val res23: Int = 50
+
+scala>
+scala> val res24: Array[Int] = Array(10, 20, 30, 100, 50)
+
+scala> val res25: Int = 5
+
+scala> var y: Array[Int] = Array(60, 70)
+
+scala> val res26: Array[Int] = Array(10, 20, 30, 100, 50, 60, 70)
+
+scala> var z: Array[Int] = Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+
+scala> val res27: Array[Int] = Array(10, 20, 30, 100, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+
+scala> -- [E007] Type Mismatch Error: -------------------------------------------------
+1 |new Array(100, 200)
+  |          ^^^^^^^^
+  |          Found:    (Int, Int)
+  |          Required: Int
+  |
+  | longer explanation available when compiling with `-explain`
+1 error found
+
+scala> val res28: Array[Int] = Array(100, 200)

@@ -1,0 +1,73 @@
+Exercise #5: Strings in the interpreter
+
+scala> var x: String = "Mary Had a Little Lamb   "
+ x.toUpperCase
+ x.toLowerCase
+ x.replace('a', 'e')
+ x.toList
+ x.tail
+ x.trim
+ x.length
+ x.trim.length
+ x.substring(5, 8)
+ x.substring(5)
+ x.substring(1, 3)
+ x.substring(0, 3)
+ x.substring(0, 4)
+ x.charAt(0)
+ x.charAt(6)
+ x.charAt(100)
+ x.indexOf("M")
+ x.indexOf("L")
+ x.indexOf("a")
+ x.indexOf("z")
+ x.indexOf('a')
+ x.indexOf('i')
+var x: String = "Mary Had a Little Lamb   "
+
+scala> val res48: String = "MARY HAD A LITTLE LAMB   "
+
+scala> val res49: String = "mary had a little lamb   "
+
+scala> val res50: String = "Mery Hed e Little Lemb   "
+
+scala> val res51: List[Char] = List(M, a, r, y,  , H, a, d,  , a,  , L, i, t, t, l, e,  , L, a, m, b,  ,  ,  )
+
+scala> val res52: String = "ary Had a Little Lamb   "
+
+scala> val res53: String = Mary Had a Little Lamb
+
+scala> val res54: Int = 25
+
+scala> val res55: Int = 22
+
+scala> val res56: String = Had
+
+scala> val res57: String = "Had a Little Lamb   "
+
+scala> val res58: String = ar
+
+scala> val res59: String = Mar
+
+scala> val res60: String = Mary
+
+scala> val res61: Char = M
+
+scala> val res62: Char = a
+
+scala> java.lang.StringIndexOutOfBoundsException: String index out of range: 100
+  at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:48)
+  at java.base/java.lang.String.charAt(String.java:1517)
+  ... 32 elided
+
+scala> val res64: Int = 0
+
+scala> val res65: Int = 11
+
+scala> val res66: Int = 1
+
+scala> val res67: Int = -1
+
+scala> val res68: Int = 1
+
+scala> val res69: Int = 12

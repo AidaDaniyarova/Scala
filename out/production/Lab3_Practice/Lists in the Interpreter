@@ -1,0 +1,88 @@
+Exercise #3: Lists in the Interpreter
+
+scala> List(4, 1, 8, 45, 3)
+ List('v', 'a', 'r')
+ List(4, 1, 'e', 45, 3)
+ List("Mr", "Joe", "Bloggs")
+ List(4.4, 1, 8.33, 45.0, 3.67)
+ List(1,2,3) :+ 4
+ 4 +: List(1, 2, 3)
+ List.range(5, 13)
+ List.range(5, 3)
+ List.range('a', 'z')
+ List.fill(3)(10)
+ List.fill(10)(3)
+ List.fill(5)('g')
+ List.fill(4)("foo")
+ List.tabulate(11)(n => n * n)
+ List.tabulate(11)(Math.pow(_ , 2))
+ List.tabulate(5)(x => x * 10)
+ List.tabulate(20)(_ * 5)
+ List.tabulate(20)(_ * 5).tail
+ List.tabulate(6)(List.range(_, 6))
+ List.tabulate(6)(List.range(_, 6)).reverse
+ List.tabulate(6)(List.range(_, 6)).flatten.distinct
+ var xs: List[Int] = List.range(1, 11)
+ xs.tail
+ xs.head
+ xs.isEmpty
+ xs.reverse
+ xs.sum
+ xs.size
+val res0: List[Int] = List(4, 1, 8, 45, 3)
+
+scala> val res1: List[Char] = List(v, a, r)
+
+scala> val res2: List[Char] = List(EOT, SOH, e, -, ETX)
+
+scala> val res3: List[String] = List(Mr, Joe, Bloggs)
+
+scala> val res4: List[Double] = List(4.4, 1.0, 8.33, 45.0, 3.67)
+
+scala> val res5: List[Int] = List(1, 2, 3, 4)
+
+scala> val res6: List[Int] = List(4, 1, 2, 3)
+
+scala> val res7: List[Int] = List(5, 6, 7, 8, 9, 10, 11, 12)
+
+scala> val res8: List[Int] = List()
+
+scala> val res9: List[Char] = List(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y)
+
+scala> val res10: List[Int] = List(10, 10, 10)
+
+scala> val res11: List[Int] = List(3, 3, 3, 3, 3, 3, 3, 3, 3, 3)
+
+scala> val res12: List[Char] = List(g, g, g, g, g)
+
+scala> val res13: List[String] = List(foo, foo, foo, foo)
+
+scala> val res14: List[Int] = List(0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
+
+scala> val res15: List[Double] = List(0.0, 1.0, 4.0, 9.0, 16.0, 25.0, 36.0, 49.0, 64.0, 81.0, 100.0)
+
+scala> val res16: List[Int] = List(0, 10, 20, 30, 40)
+
+scala> val res17: List[Int] = List(0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95)
+
+scala> val res18: List[Int] = List(5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95)
+
+scala> val res19: List[List[Int]] = List(List(0, 1, 2, 3, 4, 5), List(1, 2, 3, 4, 5), List(2, 3, 4, 5), List(3, 4, 5), List(4, 5), List(5))
+
+scala> val res20: List[List[Int]] = List(List(5), List(4, 5), List(3, 4, 5), List(2, 3, 4, 5), List(1, 2, 3, 4, 5), List(0, 1, 2, 3, 4, 5))
+
+scala> val res21: List[Int] = List(0, 1, 2, 3, 4, 5)
+
+scala> var xs: List[Int] = List(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+scala> val res22: List[Int] = List(2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+scala> val res23: Int = 1
+
+scala> val res24: Boolean = false
+
+scala> val res25: List[Int] = List(10, 9, 8, 7, 6, 5, 4, 3, 2, 1)
+
+scala> val res26: Int = 55
+
+scala> val res27: Int = 10

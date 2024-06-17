@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../ASCII graphics library/ASCII graphics library.iml" filepath="$PROJECT_DIR$/../ASCII graphics library/ASCII graphics library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Class_Object/Class_Object.iml" filepath="$PROJECT_DIR$/Class_Object/Class_Object.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Introduction/Introduction.iml" filepath="$PROJECT_DIR$/Introduction/Introduction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab10_Practice/Lab10_Practice.iml" filepath="$PROJECT_DIR$/Lab10_Practice/Lab10_Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab11_Practice/Lab11_Practice.iml" filepath="$PROJECT_DIR$/Lab11_Practice/Lab11_Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab12_Practice/Lab12_Practice.iml" filepath="$PROJECT_DIR$/Lab12_Practice/Lab12_Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab13_Practice/Lab13_Practice.iml" filepath="$PROJECT_DIR$/Lab13_Practice/Lab13_Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab14_Practice/Lab14_Practice.iml" filepath="$PROJECT_DIR$/Lab14_Practice/Lab14_Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab15_Practice/Lab15_Practice.iml" filepath="$PROJECT_DIR$/Lab15_Practice/Lab15_Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab16_Practice/Lab16_Practice.iml" filepath="$PROJECT_DIR$/Lab16_Practice/Lab16_Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab1_Practice/Lab1_Practice.iml" filepath="$PROJECT_DIR$/Lab1_Practice/Lab1_Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab2_Practice/Lab2_Practice.iml" filepath="$PROJECT_DIR$/Lab2_Practice/Lab2_Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab3_Practice/Lab3_Practice.iml" filepath="$PROJECT_DIR$/Lab3_Practice/Lab3_Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab4_Practice/Lab4_Practice.iml" filepath="$PROJECT_DIR$/Lab4_Practice/Lab4_Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab5_Practice/Lab5_Practice.iml" filepath="$PROJECT_DIR$/Lab5_Practice/Lab5_Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab6_Practice/Lab6_Practice.iml" filepath="$PROJECT_DIR$/Lab6_Practice/Lab6_Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab7_Practice/Lab7_Practice.iml" filepath="$PROJECT_DIR$/Lab7_Practice/Lab7_Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab8_Practice/Lab8_Practice.iml" filepath="$PROJECT_DIR$/Lab8_Practice/Lab8_Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab9_Practice/Lab9_Practice.iml" filepath="$PROJECT_DIR$/Lab9_Practice/Lab9_Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/P2834840_Aida.iml" filepath="$PROJECT_DIR$/P2834840_Aida.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tasks/Tasks.iml" filepath="$PROJECT_DIR$/Tasks/Tasks.iml" />
+    </modules>
+  </component>
+</project>

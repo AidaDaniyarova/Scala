@@ -1,0 +1,67 @@
+Exercise #11: Multi-dimensional arrays in the interpreter
+
+scala> Array.ofDim[Int](2,3)
+ Array.ofDim[Boolean](3,3)
+ Array(Array(1,2,3,4), Array(5,6,7,8))
+ Array(Array("pear", "banana"), Array("apple", "kiwi"))
+ var table = Array(Array(1,2,3), Array(4,5,6), Array(7,8,9))
+ table(0)
+ table(1)
+ table(5)
+ table(0)(0)
+ table(2)(0)
+ table(2)(2)
+ table(3)(2)
+ table(1)(1) = 1000
+ table
+ table.length
+ table(0).length
+ table(1).length
+ table(0) = Array(22, 44)
+ table
+ table(0).length
+ table(1).length
+ table.flatten
+val res29: Array[Array[Int]] = Array(Array(0, 0, 0), Array(0, 0, 0))
+
+scala> val res30: Array[Array[Boolean]] = Array(Array(false, false, false), Array(false, false, false), Array(false, false, false))
+
+scala> val res31: Array[Array[Int]] = Array(Array(1, 2, 3, 4), Array(5, 6, 7, 8))
+
+scala> val res32: Array[Array[String]] = Array(Array(pear, banana), Array(apple, kiwi))
+
+scala> var table: Array[Array[Int]] = Array(Array(1, 2, 3), Array(4, 5, 6), Array(7, 8, 9))
+
+scala> val res33: Array[Int] = Array(1, 2, 3)
+
+scala> val res34: Array[Int] = Array(4, 5, 6)
+
+scala> java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 3
+  ... 32 elided
+
+scala> val res36: Int = 1
+
+scala> val res37: Int = 7
+
+scala> val res38: Int = 9
+
+scala> java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+  ... 32 elided
+
+scala>
+scala> val res40: Array[Array[Int]] = Array(Array(1, 2, 3), Array(4, 1000, 6), Array(7, 8, 9))
+
+scala> val res41: Int = 3
+
+scala> val res42: Int = 3
+
+scala> val res43: Int = 3
+
+scala>
+scala> val res44: Array[Array[Int]] = Array(Array(22, 44), Array(4, 1000, 6), Array(7, 8, 9))
+
+scala> val res45: Int = 2
+
+scala> val res46: Int = 3
+
+scala> val res47: Array[Int] = Array(22, 44, 4, 1000, 6, 7, 8, 9)

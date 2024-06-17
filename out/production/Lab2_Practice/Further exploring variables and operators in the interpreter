@@ -1,0 +1,200 @@
+Exercise #14: Further exploring variables and operators in the interpreter
+
+scala> var a, b, c: Int = 5
+ var d: Double = 6.6
+ d = 7.7
+ d += 2
+ print(d)
+ b *= 5
+ print(b)
+ d + a
+ var e: 8
+ var f: 9.9
+ var g: 3 * 4.4
+ var h: 100000000L
+ var i = 'a'
+ var j: Boolean = a < e
+ var k: Boolean = a == c
+ var l = a >= c
+ var m = a != c
+ var n: Boolean = a > 4 && a >= 5
+ var even: Int = 6
+ even % 2 == 0
+ true && true
+ a == 5 && a == 6
+ a == 5 || a == 6
+ a > 1 || a == 0
+ "message " * 3
+ 3 * "message"
+ "message" / 3
+ "message" - 3
+ "message" % 3
+ 3 + "message"
+ val Pi = 3.14
+ Pi = 3.1416
+ val constantValue: Int = 5
+ constantValue = constantValue + 1
+ constantValue /= 2
+var a: Int = 5
+var b: Int = 5
+var c: Int = 5
+
+scala> var d: Double = 6.6
+
+scala> d: Double = 7.7
+
+scala>
+scala> 9.7
+scala>
+scala> 25
+scala> val res0: Double = 14.7
+
+scala> -- [E067] Syntax Error: --------------------------------------------------------
+1 |var e: 8
+  |    ^
+  |Declaration of variable e not allowed here: only classes can have declared but undefined members
+  |
+  | longer explanation available when compiling with `-explain`
+1 error found
+
+scala> -- [E067] Syntax Error: --------------------------------------------------------
+1 |var f: 9.9
+  |    ^
+  |Declaration of variable f not allowed here: only classes can have declared but undefined members
+  |
+  | longer explanation available when compiling with `-explain`
+1 error found
+
+scala> -- [E006] Not Found Error: -----------------------------------------------------
+1 |var g: 3 * 4.4
+  |         ^
+  |         Not found: type *
+  |
+  | longer explanation available when compiling with `-explain`
+-- [E067] Syntax Error: --------------------------------------------------------
+1 |var g: 3 * 4.4
+  |    ^
+  |Declaration of setter g_= not allowed here: only classes can have declared but undefined members
+  |
+  | longer explanation available when compiling with `-explain`
+2 errors found
+
+scala> -- [E067] Syntax Error: --------------------------------------------------------
+1 |var h: 100000000L
+  |    ^
+  |Declaration of variable h not allowed here: only classes can have declared but undefined members
+  |
+  | longer explanation available when compiling with `-explain`
+1 error found
+
+scala> var i: Char = a
+
+scala> -- [E006] Not Found Error: -----------------------------------------------------
+1 |var j: Boolean = a < e
+  |                     ^
+  |                     Not found: e
+  |
+  | longer explanation available when compiling with `-explain`
+1 error found
+
+scala> var k: Boolean = true
+
+scala> var l: Boolean = true
+
+scala> var m: Boolean = false
+
+scala> var n: Boolean = true
+
+scala> var even: Int = 6
+
+scala> val res1: Boolean = true
+
+scala> val res2: Boolean = true
+
+scala> val res3: Boolean = false
+
+scala> val res4: Boolean = true
+
+scala> val res5: Boolean = true
+
+scala> val res6: String = "message message message "
+
+scala> -- [E134] Type Error: ----------------------------------------------------------
+1 |3 * "message"
+  |^^^
+  |None of the overloaded alternatives of method * in class Int with types
+  | (x: Double): Double
+  | (x: Float): Float
+  | (x: Long): Long
+  | (x: Int): Int
+  | (x: Char): Int
+  | (x: Short): Int
+  | (x: Byte): Int
+  |match arguments (("message" : String))
+1 error found
+
+scala> -- [E008] Not Found Error: -----------------------------------------------------
+1 |"message" / 3
+  |^^^^^^^^^^^
+  |value / is not a member of String, but could be made available as an extension method.
+  |
+  |One of the following imports might make progress towards fixing the problem:
+  |
+  |  import math.Fractional.Implicits.infixFractionalOps
+  |  import math.Integral.Implicits.infixIntegralOps
+  |
+1 error found
+
+scala> -- [E008] Not Found Error: -----------------------------------------------------
+1 |"message" - 3
+  |^^^^^^^^^^^
+  |value - is not a member of String, but could be made available as an extension method.
+  |
+  |One of the following imports might make progress towards fixing the problem:
+  |
+  |  import math.Fractional.Implicits.infixFractionalOps
+  |  import math.Integral.Implicits.infixIntegralOps
+  |  import math.Numeric.Implicits.infixNumericOps
+  |
+1 error found
+
+scala> -- [E008] Not Found Error: -----------------------------------------------------
+1 |"message" % 3
+  |^^^^^^^^^^^
+  |value % is not a member of String, but could be made available as an extension method.
+  |
+  |The following import might make progress towards fixing the problem:
+  |
+  |  import math.Integral.Implicits.infixIntegralOps
+  |
+1 error found
+
+scala> there was 1 deprecation warning; re-run with -deprecation for details
+1 warning found
+val res7: String = 3message
+
+scala> val Pi: Double = 3.14
+
+scala> -- [E052] Type Error: ----------------------------------------------------------
+1 |Pi = 3.1416
+  |^^^^^^^^^^^
+  |Reassignment to val Pi
+  |
+  | longer explanation available when compiling with `-explain`
+1 error found
+
+scala> val constantValue: Int = 5
+
+scala> -- [E052] Type Error: ----------------------------------------------------------
+1 |constantValue = constantValue + 1
+  |^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |Reassignment to val constantValue
+  |
+  | longer explanation available when compiling with `-explain`
+1 error found
+
+scala> -- [E008] Not Found Error: -----------------------------------------------------
+1 |constantValue /= 2
+  |^^^^^^^^^^^^^^^^
+  |value /= is not a member of Int - did you mean constantValue.!=?
+1 error found

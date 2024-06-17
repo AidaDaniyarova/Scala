@@ -1,0 +1,74 @@
+Exercise #13: Other variable types in the interpreter
+
+scala> var x1: Char = 'a'
+ var x2: String = "a"
+ x2 = "b"
+ x2 = "b" + "c"
+ var x3: String = x1 + x2
+ var x4: Char = 'b'
+ var x5: String = x1 + x4
+ var x6: Char = 97
+ var x7: Char = 'a' - 32
+ var x8: Boolean = false
+ var x9: String = 45
+ var 10x: String = "45"
+ var def: String = 45
+ var object: Int = 5
+var x1: Char = a
+
+scala> var x2: String = a
+
+scala> x2: String = b
+
+scala> x2: String = bc
+
+scala> there was 1 deprecation warning; re-run with -deprecation for details
+1 warning found
+var x3: String = abc
+
+scala> var x4: Char = b
+
+scala> -- [E007] Type Mismatch Error: -------------------------------------------------
+1 |var x5: String = x1 + x4
+  |                      ^^
+  |                      Found:    (x4 : Char)
+  |                      Required: String
+  |
+  | longer explanation available when compiling with `-explain`
+1 error found
+
+scala> var x6: Char = a
+
+scala> var x7: Char = A
+
+scala> var x8: Boolean = false
+
+scala> -- [E007] Type Mismatch Error: -------------------------------------------------
+1 |var x9: String = 45
+  |                 ^^
+  |                 Found:    (45 : Int)
+  |                 Required: String
+  |
+  | longer explanation available when compiling with `-explain`
+1 error found
+
+scala> -- [E032] Syntax Error: --------------------------------------------------------
+1 |var 10x: String = "45"
+  |       ^
+  |       pattern expected
+  |
+  | longer explanation available when compiling with `-explain`
+
+scala> -- [E032] Syntax Error: --------------------------------------------------------
+1 |var def: String = 45
+  |    ^^^
+  |    pattern expected
+  |
+  | longer explanation available when compiling with `-explain`
+
+scala> -- [E032] Syntax Error: --------------------------------------------------------
+1 |var object: Int = 5
+  |    ^^^^^^
+  |    pattern expected
+  |
+  | longer explanation available when compiling with `-explain`

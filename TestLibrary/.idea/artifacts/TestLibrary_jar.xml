@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TestLibrary:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TestLibrary_jar</output-path>
+    <root id="archive" name="TestLibrary.jar">
+      <element id="module-output" name="TestLibrary" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Library_Project/out/artifacts/Library_Project_jar/Library_Project.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.scala-lang/scala3-library_3/jars/scala3-library_3-3.3.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.13.10.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

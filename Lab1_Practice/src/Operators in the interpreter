@@ -1,0 +1,57 @@
+Exercise #11: Operators in the interpreter
+
+scala> 5 + 5
+ 5 + 5.5
+ 5.0 + 5.5
+ -5 + 5
+ true + 5
+ "true" + 5
+ "true" + "5"
+ 2147483646 + 1
+ 2147483647 + 1
+ 2147483647L + 1
+ 5 % 3
+ 5 + 3 * 2
+ 3 / 4
+ 3.0 / 4
+ 3 / 4.0
+val res0: Int = 10
+
+scala> val res1: Double = 10.5
+
+scala> val res2: Double = 10.5
+
+scala> val res3: Int = 0
+
+scala> -- [E008] Not Found Error: -----------------------------------------------------
+1 |true + 5
+  |^^^^^^
+  |value + is not a member of Boolean, but could be made available as an extension method.
+  |
+  |One of the following imports might make progress towards fixing the problem:
+  |
+  |  import math.Fractional.Implicits.infixFractionalOps
+  |  import math.Integral.Implicits.infixIntegralOps
+  |  import math.Numeric.Implicits.infixNumericOps
+  |
+1 error found
+
+scala> val res4: String = true5
+
+scala> val res5: String = true5
+
+scala> val res6: Int = 2147483647
+
+scala> val res7: Int = -2147483648
+
+scala> val res8: Long = 2147483648
+
+scala> val res9: Int = 2
+
+scala> val res10: Int = 11
+
+scala> val res11: Int = 0
+
+scala> val res12: Double = 0.75
+
+scala> val res13: Double = 0.75

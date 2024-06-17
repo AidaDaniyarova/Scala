@@ -1,0 +1,45 @@
+Exercise #6: More operators in the interpreter
+
+scala> var x: Int = 3
+ var y: Int = 7
+ var z: Double = 5.5
+var x: Int = 3
+
+scala> var y: Int = 7
+
+scala> var z: Double = 5.5
+
+scala> import scala.language.postfixOps
+ //a) Write an expression that provides the average of x and y
+ var aver:Float = (x+y)/2
+
+scala>
+scala> there was 1 deprecation warning; re-run with -deprecation for details
+1 warning found
+var aver: Float = 5.0
+
+//b) Write an expression that gives the remainder of a division of y by x
+scala> var remainder: Float = y%x
+there was 1 deprecation warning; re-run with -deprecation for details
+1 warning found
+var remainder: Float = 1.0
+
+
+//c) Write an expression that adds x and y, divides this by z, and assigns the overall result to a new variable called result
+scala> var result: Double = (x + y) / z
+var result: Double = 1.8181818181818181
+
+//d) Write an expression that subtracts x from z and then divides the result of this by y
+scala> var subs: Double = (z - x) / y
+var subs: Double = 0.35714285714285715
+
+//h) Write an expression that increases x by 1 (note: this should actually update the value held by variable x, i.e. reassignment)
+scala> x+=1
+
+//i) Write an expression in the interpreter that decreases y by x
+scala> var subs2: Int = y - x
+var subs2: Int = 3
+
+//j) Write an expression in the interpreter that multiplies y by 3
+scala> var multiply: Int = y * 3
+var multiply: Int = 21
